@@ -1,0 +1,92 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, pink, #64403E);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    background-color: #64403E;
+    color: white;
+    margin: 6rem auto;
+    width: 20%;
+    border-radius: 3rem;
+    border: 2px solid white;
+    box-shadow: -3px -3px 5px black;
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color: #FEA00A;
+}
+
+.input {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input input {
+    background-color: rgb(166, 160, 160);
+    padding: 3rem 0 0 0.8rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 4px black;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.buttons .row {
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.row button {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: 400;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.2rem;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 3px 3px gray;
+}
+.row button:hover {
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width:1270px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .container {
+        width: 90%;
+    }
+}
